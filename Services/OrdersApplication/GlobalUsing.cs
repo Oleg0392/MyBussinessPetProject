@@ -1,0 +1,11 @@
+﻿global using OrdersDomain.Models;
+global using OrdersDomain.ValueObjects;
+global using BuildingTools.CQRS;
+global using OrdersApplication.Data;
+global using OrdersApplication.Dtos;
+global using OrdersApplication.Exceptions;
+global using MediatR;
+global using Microsoft.Extensions.Logging;
+global using OrdersDomain.Events;
+global using Microsoft.EntityFrameworkCore;
+global using OrdersApplication.Extensions;

@@ -1,0 +1,49 @@
+﻿@page
+@model MyBussinessWeb.Pages.OrdersModel
+@{
+    ViewData["Title"] = "Orders";
+}
+
+<form class="row g-4">
+	<div class="col-auto">
+		<label for="staticEmail" class="col-sm-2 col-form-label">Period</label>
+	</div>
+	<div class="col-auto">
+		<input type="date" class="form-control">
+	</div>
+	<div class="col-auto">
+		<input type="date" class="form-control">
+	</div>
+	<div class="col-auto">
+		<button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+	</div>
+</form>
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@Html.Raw("@mdo")</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@Html.Raw("@fat")</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@Html.Raw("@twitter")</td>
+        </tr>
+    </tbody>
+</table>
